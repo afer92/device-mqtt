@@ -87,11 +87,11 @@ class Config:
         return self._config['config']['mqtt']['topic']
 
 
-def main():  
+def main():
     config = Config()
     print(config.mqtt)
     mqtt_process = Mqtt_process(config)
 
+
 if __name__ == '__main__':
     exit(main())
-
