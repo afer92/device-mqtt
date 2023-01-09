@@ -109,7 +109,7 @@ def main():
 
     # mqtt process
 
-    config = Config(filePath="/opt/pi/params/miflora_mqtt.yaml")
+    config = Config(filePath="/xx/params/miflora_mqtt.yaml")
     print(config.plant)
     mac2name = config.plant
     mqtt_process = Mqtt_process(config, logger)
@@ -166,19 +166,19 @@ if __name__ == '__main__':
 config:
   age_max_sec: 600
   mqtt:
-    broker_address: 192.168.0.5
+    broker_address: 192.168.xx.xx
     pass: password
     port: 1883
     topic: miflora/sensor/+/state
     user: admin
   plant:
     80:EA:CA:89:00:8C: Rosier@BalconJardin
-    80:EA:CA:89:07:34: DracaenaFragrans@Salon
-    80:EA:CA:89:0B:AF: CyclamenCarre@BalconRue
-    80:EA:CA:89:0C:CB: DracaenaMarginata3@Salon
-    C4:7C:8D:64:3F:93: Erable@BalconRue
-    C4:7C:8D:64:40:77: DracaenaMarginata@Salon
-    C4:7C:8D:65:B1:1D: Stephanotis@Salon
-    C4:7C:8D:6B:C5:58: DypsisLutescens@Salon
-    C4:7C:8D:6C:13:2D: CyclamenRue@BalconRue
+    80:EA:CA:89:00:34: DracaenaFragrans@Salon
+    80:EA:CA:89:00:AF: CyclamenCarre@BalconRue
+    80:EA:CA:89:00:CB: DracaenaMarginata3@Salon
+    C4:7C:8D:64:0F:93: Erable@BalconRue
+    C4:7C:8D:64:00:77: DracaenaMarginata@Salon
+    C4:7C:8D:65:B0:1D: Stephanotis@Salon
+    C4:7C:8D:6B:C0:58: DypsisLutescens@Salon
+    C4:7C:8D:6C:10:2D: CyclamenRue@BalconRue
 ```
