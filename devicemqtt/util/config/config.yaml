@@ -1,0 +1,8 @@
+config:
+  age_max_sec: 600
+  mqtt:
+    broker_address: 192.168.0.5
+    pass: password
+    port: 1883
+    topic: miflora/sensor/+/state
+    user: admin

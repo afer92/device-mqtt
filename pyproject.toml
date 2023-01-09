@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name        = "devicemqtt"
+version     = "2023.1.0.dev0"
+license     = {text = "Apache-2.0"}
+description = "Publish and update devices on mqtt"
+readme      = "README.rst"
+authors     = [
+    {name = "Alain", email = "afer921@mailfence.com"}
+]
+keywords    = ["home", "automation"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Home Automation",
+]
+requires-python = ">=3.9.0"
+dependencies    = [
+    "bleak",
+    "paho-mqtt",
+    "pip>=21.0,<22.4",
+    "pyyaml==6.0",
+    "requests==2.28.1",
+]
